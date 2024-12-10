@@ -5,5 +5,6 @@ output "appgw_public_ip_address" {
 
 output "vm_names" {
   description = "The names of the VMs."
-  value       = "${azurerm_windows_virtual_machine.VM.*.name}"
+  value       = "${azurerm_windows_virtual_machine.VM.*.id}"
 }
+
